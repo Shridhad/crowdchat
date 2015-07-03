@@ -1,0 +1,20 @@
+{
+  "name": "crowdchat",
+  "version": "0.0.1",
+  "authors": [
+    "Shridhar Deshmukh <shridhar.deshmukh3@gmail.com>"
+  ],
+  "description": "A entrepreneur team chat app",
+  "keywords": [
+    "crowdchat",
+    "team chat"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
