@@ -1,10 +1,18 @@
 <link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/iron-ajax/iron-ajax.html">
 
 <dom-module id="crowdchat-application">
 	<template>
 	  <link rel="stylesheet" href="crowdchat-application.css">
+	  <iron-ajax auto 
+	  	url="/data.json" 
+	  	handle-as="json" 
+	  	last-response="{{lastResponse}}"></iron-ajax>
 	  <div class="crowdchat-wrapper">
-	  		Crowdchat Application
+	  		<div class="pane-wrapper">
+	  			<div class="chat-pane">{{lastResponse}}</div>
+	  			<div class="list-pane"></div>
+	  		</div>
 	  </div>
   </template>
   <script src="crowdchat-application.js"></script>

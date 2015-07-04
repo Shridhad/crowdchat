@@ -1,2 +1,29 @@
+$shadow-color: rgb(179, 177, 177)
+$chat-pane-border-color: rgb(218, 216, 219)
+$app-bg-color: rgb(218, 214, 214)
+$white: rgb(255, 255, 255)
+
 .crowdchat-wrapper
-	font-size: 18px
+	width: 720px
+	height: 600px
+	padding: 20px
+	background-color: $app-bg-color
+	
+.pane-wrapper
+	position: relative
+	height: 100%
+	background-color: $white
+	border-radius: 5px
+	box-shadow: 1px 1px 2px $shadow-color
+
+.chat-pane
+	float: left
+	min-width: 65%
+	height: 100%
+	border-right: 1px solid $chat-pane-border-color
+
+.list-pane
+	min-width: 35%
+	height: 100%
+
+		

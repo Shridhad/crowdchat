@@ -9,6 +9,7 @@ appConfig =
 
 project =
   app: 'app'
+  api: 'api'
   test: 'test'
   dist: 'dist'
 
@@ -40,7 +41,7 @@ initConfig =
     options:
       hostname: appConfig.hostname
       port: appConfig.port
-      base: [ project.app, project.dist ]
+      base: [ project.app, project.dist, project.api ]
 
     server:
       middleware: ( connect ) ->
@@ -48,6 +49,7 @@ initConfig =
           require( 'connect-livereload' )
           helper.mountFolder( connect, project.dist )
           helper.mountFolder( connect, project.app )
+          helper.mountFolder( connect, project.api )
         ]
 
   watch:
@@ -60,7 +62,8 @@ initConfig =
         livereload: true
       files: [
         '<%= yeoman.app %>/**/*.html'
-        '<%= yeoman.dist %>/**/*.{css,js,html}'
+        '<%= yeoman.dist %>/**/*.{css,js}'
+        '<%= yeoman.api %>/**/*.json'
       ]
 
 

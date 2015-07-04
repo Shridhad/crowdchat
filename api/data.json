@@ -1,0 +1,24 @@
+{
+	"title": "Crowdchat Application",
+	"members": [
+		{
+			"name": "Jacqueline Holmes",
+			"status": "online",
+			"avatar": "jacquelineholmes.jpg",
+			"label": "Adiministrator UK Group",
+			"email": "jacqueline.holmes@corps.company.com",
+			"location": "UK-London",
+			"mobile": "+44 (0) 7877 554 324",
+			"manager": "Alan Jensen",
+			"extension": "14536",
+			"skils": ["Expert User(50K+)"]
+		}
+	],
+	"messages": [
+		{
+			"from": "Jacqueline Holmes",
+			"message": "To register a custom element, use the Polymer function, and pass in the prototype for the new element.",
+			"time": "14:10"
+		}
+	]
+}
