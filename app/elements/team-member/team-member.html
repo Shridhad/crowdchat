@@ -1,18 +1,19 @@
 <link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/iron-selector/iron-selector.html">
 
 <dom-module id="team-member">
 	<link rel="stylesheet" href="team-member.css">
 	<template>
-		<ul class="team-members">
+		<iron-selector class="team-members">
 			<template is="dom-repeat" id="member" items="{{members}}">
-			  <li class="team-member-wrapper" on-click="selectionChanged" index="{{index}}">
+			  <div class="team-member-wrapper" on-click="selectionChanged" index="{{index}}">
 			  	<div class="user-avatar">
 			  		<img src="{{item.avatar}}">
 			  	</div>		
 			  	<div class="user-name">
 			  		<strong>{{item.name}}</strong>
 			  	</div>
-			  </li>
+			  </div>
 		  </template>
 	  </ul>
   </template>

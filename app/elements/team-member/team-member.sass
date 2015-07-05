@@ -2,17 +2,13 @@
 
 $hover-border-color: rgb(46, 117, 168)
 
-.team-members
-	padding: 0
-	margin: 0
-	
 .team-member-wrapper
 	display: flex
 	padding: 15px
 	border-bottom: 1px solid $border-color
 	border-left: 3px solid transparent
 
-	&:hover, &.active
+	&:hover, &.iron-selected
 		border-left-color: $hover-border-color 
 		background-color: lighten($border-color, 10)
 

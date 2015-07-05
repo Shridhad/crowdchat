@@ -7,6 +7,7 @@ Polymer
 		selected:
 			type: Number
 			notify: true
+	
 	selectionChanged: (event) ->
 		@selected = event.currentTarget.index
 		
