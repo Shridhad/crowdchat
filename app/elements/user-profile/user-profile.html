@@ -1,6 +1,7 @@
 <link rel="import" href="/bower_components/polymer/polymer.html">
 <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="/bower_components/iron-icons/communication-icons.html">
+<link rel="import" href="/bower_components/iron-icons/av-icons.html">
 
 <dom-module id="user-profile">
 	<link rel="stylesheet" href="user-profile.css">
@@ -8,13 +9,16 @@
 	  <div class="user-profile-wrapper">
 	  	<div class="communication-actions">
 	  			<paper-icon-button icon="communication:email"></paper-icon-button>
-		  		<paper-icon-button icon="communication:call"></paper-icon-button>
+		  		<paper-icon-button icon="communication:call" on-click="call"></paper-icon-button>
 		  		<div class="status">
 		  			<div class="calling">
 		  				<span>Calling</span>
 		  				<span class="one">.</span>
 		  				<span class="two">.</span>
 		  				<span class="three">.</span>
+		  			</div>
+		  			<div class="connected">
+		  				<time>00:00</time>
 		  			</div>
 		  		</div>
 	  	</div>
@@ -28,6 +32,10 @@
 	  	<span class="user-details">845/1300</span>
 	  	<span class="user-details label">{{user.label}}</span>
 	  	<span class="user-details email">{{user.email}}</span>
+	  	<div class="communication-actions secondary-actions">
+	  		<paper-icon-button icon="communication:call-end" on-click="disconnect"></paper-icon-button>
+	  		<paper-icon-button icon="av:mic-off"></paper-icon-button>
+	  	</div>
 	  	<div class="secondary-details">
 	  		<div class="column">
 	  			<div class="details-wrapper">

@@ -1,6 +1,8 @@
 @import "../../styles/variables"
 @import "animated-ellipsis"
 
+$call-end-color: rgba(234, 77, 77, 0.91)
+
 .user-profile-wrapper
 	padding: 20px
 
@@ -11,23 +13,36 @@
 			border: 1px solid $border-color
 			border-radius: 50%
 			position: absolute
-			top: 60px
+			top: 80px
+			transition: opacity 0.5s ease-in-out
 		[icon="communication:email"]
 			left: 60px
 		[icon="communication:call"]
 			right: 60px	
 		.status
 			text-align: center
-			padding: 20px 0
+			position: relative
 			font-size: 1.3em
+			height: 30px
 			color: $white
-			display: none
-		&.in-progress
-			.status
-				display: block
-			paper-icon-button
-				display: none	
-		
+			transition: all 0.5s ease-in-out
+			.calling, .connected
+				position: absolute
+				width: 100%
+				opacity: 0
+				transition: opacity 0.9s ease-in-out
+
+
+	.secondary-actions
+		paper-icon-button
+			top: 20px
+			left: 50%
+			margin-left: -23px
+			opacity: 0
+			transition: all 0.5s ease-in-out
+		[icon="communication:call-end"]	
+			background-color: $call-end-color
+			
 	.user-avatar img
 		height: 150px
 		width: 150px
@@ -63,6 +78,9 @@
 
 	.secondary-details
 		margin: 25px 0 10px
+		position: relative
+		top: 0	
+		transition: all 1s ease-in-out
 		.column
 			display: inline-block
 			vertical-align: top
@@ -77,8 +95,26 @@
 		.details-wrapper
 			margin-bottom: 10px
 
-	&.calling
+	&.call-in-progress
+		.secondary-details, .email
+			opacity: 0
+			top: 40px
+		.communication-actions paper-icon-button
+			opacity: 0	
+		.communication-actions .calling, .secondary-actions [icon="communication:call-end"]
+			opacity: 1
 		.communication-actions .status
-			display: block
-		.communication-actions paper-icon-button, .secondary-details, .email
-			display: none	
+			margin-top: 20px
+		
+	&.call-connected
+		.communication-actions .calling
+			opacity: 0
+		.communication-actions .connected
+			opacity: 1
+		.secondary-actions paper-icon-button
+			opacity: 1
+		[icon="av:mic-off"]
+			margin-left: -50px	
+		.secondary-actions [icon="communication:call-end"]	
+			margin-left: 4px
+
