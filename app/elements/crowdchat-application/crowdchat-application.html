@@ -2,6 +2,7 @@
 <link rel="import" href="/bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="/elements/chat-banner/chat-banner.html">
 <link rel="import" href="/elements/chat-message/chat-message.html">
+<link rel="import" href="/elements/team-member/team-member.html">
 
 <dom-module id="crowdchat-application">
 	<link rel="stylesheet" href="crowdchat-application.css">
@@ -23,7 +24,12 @@
 	  				</div>
 	  			</div>
 	  			<div class="pane-list">
+	  				<header>
 	  					<chat-banner title="Team Members" closable></chat-banner>
+	  				</header>
+	  				<div class="pane-body pane-list-body">
+	  					<team-member members="{{lastResponse.members}}"></team-member>
+	  				</div>
 	  			</div>
 	  		</div>
 	  </div>

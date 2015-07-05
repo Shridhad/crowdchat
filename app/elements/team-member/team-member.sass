@@ -1,0 +1,23 @@
+@import "../../styles/variables"
+
+$hover-border-color: rgb(46, 117, 168)
+
+.team-member-wrapper
+	display: flex
+	padding: 15px
+	border-bottom: 1px solid $border-color
+	border-left: 3px solid transparent
+
+	&:hover, &.active
+		border-left-color: $hover-border-color 
+		background-color: lighten($border-color, 10)
+
+	.user-avatar, .user-name
+		padding: 0 5px
+
+	.user-avatar img
+		height: 40px
+		width: 40px
+		display: block
+		border-radius: 50%
+

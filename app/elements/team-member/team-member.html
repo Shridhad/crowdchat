@@ -1,0 +1,20 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+
+<dom-module id="team-member">
+	<link rel="stylesheet" href="team-member.css">
+	<template>
+		<template is="dom-repeat" id="member" items="{{members}}">
+		  <div class="team-member-wrapper">
+		  	<div class="user-avatar">
+		  		<img src="{{item.avatar}}">
+		  	</div>		
+		  	<div class="user-name">
+		  		<strong>{{item.name}}</strong>
+		  	</div>
+		  </div>
+	  </template>
+  </template>
+  <script src="team-member.js"></script>
+</dom-module>
+
+
