@@ -1,5 +1,6 @@
 <link rel="import" href="/bower_components/polymer/polymer.html">
 <link rel="import" href="/bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="/elements/chat-banner/chat-banner.html">
 
 <dom-module id="crowdchat-application">
 	<template>
@@ -10,8 +11,12 @@
 	  	last-response="{{lastResponse}}"></iron-ajax>
 	  <div class="crowdchat-wrapper">
 	  		<div class="pane-wrapper">
-	  			<div class="chat-pane">{{lastResponse}}</div>
-	  			<div class="list-pane"></div>
+	  			<div class="chat-pane">
+	  				<chat-banner title="{{lastResponse.title}}"></chat-banner>
+	  			</div>
+	  			<div class="list-pane">
+	  				<chat-banner title="Team Members" closable></chat-banner>
+	  			</div>
 	  		</div>
 	  </div>
   </template>

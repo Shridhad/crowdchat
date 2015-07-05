@@ -1,0 +1,24 @@
+@import "../../styles/variables"
+$ripple-color: rgb(77, 76, 76)
+
+$bg-color: rgb(223, 229, 238)
+.chat-banner-wrapper
+	border-bottom: $border-color
+	position: relative
+	h1 
+		margin: 0
+		font-size: 1.2em
+		padding: 10px
+		background-color: $bg-color
+
+	.actions
+		position: absolute
+		top: 0
+		right: 0
+
+		&.secondary
+			paper-icon-button
+				border-left: 1px solid $border-color
+				float: left
+	
+				

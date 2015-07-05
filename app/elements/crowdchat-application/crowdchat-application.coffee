@@ -1,2 +1,2 @@
-CrowdchatApplication = Polymer
+Polymer
   is: 'crowdchat-application'

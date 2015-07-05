@@ -1,0 +1,28 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="/bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="/bower_components/iron-icons/communication-icons.html">
+
+<dom-module id="chat-banner">
+	<link rel="stylesheet" href="chat-banner.css">
+	<template>
+	  <div class="chat-banner-wrapper">
+	  		<h1>{{title}}</h1>
+	  		<template is="dom-if" if="{{!closable}}">
+		  		<div class="actions secondary">
+		  			<paper-icon-button icon="icons:account-box"></paper-icon-button>
+		  			<paper-icon-button icon="communication:call"></paper-icon-button>
+		  			<paper-icon-button icon="communication:email"></paper-icon-button>
+		  		</div>
+	  		</template>
+	  		<template is="dom-if" if="{{closable}}">
+		  		<div class="actions">
+		  			<paper-icon-button icon="clear"></paper-icon-button>
+		  		</div>
+	  		</template>
+	  </div>
+  </template>
+  <script src="chat-banner.js"></script>
+</dom-module>
+
+
