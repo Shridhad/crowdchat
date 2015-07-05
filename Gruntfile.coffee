@@ -20,6 +20,7 @@ sassSources   = [ '**/*.sass' ]
 
 helper = 
   appToDest: ( obj ) -> files: [ _.merge( obj,expand: true, cwd: project.app, dest:project.dist ) ]
+  prepend: (path, arr) -> "#{path}/#{pattern}" for pattern in arr
   mountFolder: (connect, dir) -> connect.static path.resolve(dir)
 
 initConfig = 
@@ -68,7 +69,13 @@ initConfig =
         '<%= yeoman.api %>/**/*.json'
         '<%= yeoman.img %>/**/*.jpg'
       ]
+    sass:
+      files: helper.prepend(project.app, sassSources)
+      tasks: [ "sass" ]
 
+    coffee:
+      files: helper.prepend(project.app, coffeeSources)
+      tasks: ["coffee"]
 
 module.exports = (grunt) ->
   grunt.initConfig(initConfig)
@@ -82,5 +89,5 @@ module.exports = (grunt) ->
 
   # Register Tasks
   grunt.registerTask 'compile', ['coffee', 'sass']
-  grunt.registerTask 'server',  ['compile', 'connect:server', 'watch:livereload']
+  grunt.registerTask 'server',  ['compile', 'connect:server', 'watch']
 
