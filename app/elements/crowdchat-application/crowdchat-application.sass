@@ -7,26 +7,53 @@ $app-bg-color: rgb(218, 214, 214)
 	width: 720px
 	height: 600px
 	padding: 20px
+	position: relative
 	background-color: $app-bg-color
 	
-.pane-wrapper
-	position: relative
-	height: 100%
-	background-color: $white
-	border-radius: 5px
-	overflow: hidden
-	box-shadow: 1px 1px 2px $shadow-color
+	.pane-wrapper
+		height: 100%
+		background-color: $white
+		border-radius: 5px
+		overflow: hidden
+		box-shadow: 1px 1px 2px $shadow-color
 
-.pane-chat, .pane-list
-	float: left
-	box-sizing: border-box
-	height: 100%
-	
-.pane-chat
-	width: 65%
-	border-right: 1px solid $border-color
+	.pane-chat, .pane-list
+		float: left
+		box-sizing: border-box
+		height: 100%
+		
+	.pane-chat
+		width: 65%
+		position: relative
+		border-right: 1px solid $border-color
 
-.pane-list
-	width: 35%
+	.pane-list
+		width: 35%
+
+	.pane-chat-footer
+		position: absolute
+		bottom: 0
+		width: 100%
+		padding: 10px 15px
+		box-sizing: border-box
+		border-top: 1px solid $border-color
+		background-color: darken($white, 5)
+
+		paper-icon-button
+			position: absolute
+			right: 20px
+			top: 10px
+
+		input[is="iron-input"]
+			display: block
+			width: 100%
+			padding: 10px
+			font-size: 1.2em
+			color: $text-color
+			outline: none
+			box-sizing: border-box	
+
+
+
 
 		
