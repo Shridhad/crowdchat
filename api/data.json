@@ -89,7 +89,12 @@
 			"from": "Hamish Labatt",
 			"avatar": "hamishlabatt.jpg",	
 			"message": "By specification, the custom element’s name must contain a dash (-)",
-			"time": "14:13"
+			"time": "14:13",
+			"attachments": [
+				{
+					"url": "http://localhost:9005/Bill-server-2015-07-05.pdf"
+				}
+			]
 		},
 		{
 			"from": "Jacqueline Holmes",

@@ -1,4 +1,6 @@
 <link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="/bower_components/iron-icons/iron-icons.html">
 
 <dom-module id="chat-message">
 	<link rel="stylesheet" href="chat-message.css">
@@ -14,6 +16,17 @@
 			  	</label>
 			  	<time>{{message.time}}</time>
 			  	<p class="msg">{{message.message}}</p>
+			  	<template is="dom-if" if="{{message.attachments.length}}">
+			  		<div class="attachments">
+					  	<template is="dom-repeat" items="{{message.attachments}}" as="attachment">
+					  		<div class="attachment">
+					  			<paper-icon-button icon="icons:attachment"></paper-icon-button>
+					  			<label>{{attachment.url}}</label>
+					  			<paper-icon-button icon="icons:close"></paper-icon-button>
+					  		</div>
+					  	</template>
+					  </div>
+			  	</template>
 		  	</div>
 		  </div>
 	  </template>
