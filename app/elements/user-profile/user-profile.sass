@@ -61,3 +61,24 @@
 			border-radius: 20px
 			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset
 
+	.secondary-details
+		margin: 25px 0 10px
+		.column
+			display: inline-block
+			vertical-align: top
+			margin-left: 50px
+			
+		label
+			display: block
+			color: darken($white, 15)			
+		strong
+			color: $white	
+
+		.details-wrapper
+			margin-bottom: 10px
+
+	&.calling
+		.communication-actions .status
+			display: block
+		.communication-actions paper-icon-button, .secondary-details, .email
+			display: none	
