@@ -5,11 +5,10 @@
 			"name": "Alan Jensen",
 			"avatar": "alanjensen.jpg",
 			"label": "Adiministrator UK Group",
-			"email": "alan.jensen@corps.company.com",
 			"location": "UK-London",
 			"mobile": "+44 (0) 8643 542 324",
 			"extension": "14562",
-			"skils": ["Expert User(50K+)"]
+			"skills": ["Expert User(50K+)"]
 		}, 
 		{
 			"name": "Jacqueline Holmes",
@@ -21,7 +20,7 @@
 			"mobile": "+44 (0) 7877 554 324",
 			"manager": "Alan Jensen",
 			"extension": "14536",
-			"skils": ["Expert User(50K+)"]
+			"skills": ["Expert User(50K+)"]
 		},
 		{
 			"name": "Eugene Simpson",
@@ -33,7 +32,7 @@
 			"mobile": "+44 (0) 7877 554 324",
 			"manager": "Alan Jensen",
 			"extension": "14536",
-			"skils": ["Expert User(50K+)"]
+			"skills": ["Expert User(50K+)"]
 		}, 
 		{
 			"name": "Thomas Morgan",
@@ -45,7 +44,7 @@
 			"mobile": "+44 (0) 7877 554 324",
 			"manager": "Alan Jensen",
 			"extension": "14536",
-			"skils": ["Expert User(50K+)"]
+			"skills": ["Expert User(50K+)"]
 		},
 		{
 			"name": "Hamish Labatt",
@@ -57,7 +56,7 @@
 			"mobile": "+44 (0) 7877 554 324",
 			"manager": "Alan Jensen",
 			"extension": "14536",
-			"skils": ["Expert User(50K+)"]
+			"skills": ["Expert User(50K+)"]
 		},
 		{
 			"name": "Katy Perry",
@@ -69,7 +68,7 @@
 			"mobile": "+44 (0) 7877 554 324",
 			"manager": "Alan Jensen",
 			"extension": "14536",
-			"skils": ["Expert User(50K+)"]
+			"skills": ["Expert User(50K+)"]
 		}
 	],
 	"messages": [

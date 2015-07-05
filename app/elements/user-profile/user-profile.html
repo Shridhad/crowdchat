@@ -41,32 +41,44 @@
 		  	</div>
 		  	<div class="secondary-details">
 		  		<div class="column">
-		  			<div class="details-wrapper">
-		  				<label>Mobile</label>
-		  				<span><strong>{{user.mobile}}</strong></span>
-		  			</div>
-		  			<div class="details-wrapper">
-		  				<label>Manager</label>
-		  				<span><strong>{{user.manager}}</strong></span>
-		  			</div>
-		  			<div class="details-wrapper">
-		  				<label>Skills</label>
-		  				<span><strong>{{user.skills}}</strong></span>
-		  			</div>
+		  			<template is="dom-if" if="{{user.mobile}}">
+			  			<div class="details-wrapper">
+			  				<label>Mobile</label>
+			  				<span><strong>{{user.mobile}}</strong></span>
+			  			</div>
+		  			</template>
+		  			<template is="dom-if" if="{{user.manager}}">
+			  			<div class="details-wrapper">
+			  				<label>Manager</label>
+			  				<span><strong>{{user.manager}}</strong></span>
+			  			</div>
+		  			</template>
+		  			<template is="dom-if" if="{{user.skills}}">
+			  			<div class="details-wrapper">
+			  				<label>Skills</label>
+			  				<span><strong>{{user.skills}}</strong></span>
+			  			</div>
+		  			</template>
 		  		</div>
 		  		<div class="column">
-		  			<div class="details-wrapper">
-		  				<label>Location</label>
-		  				<span><strong>{{user.location}}</strong></span>
-		  			</div>
-		  			<div class="details-wrapper">
-		  				<label>Extension</label>
-		  				<span><strong>{{user.extension}}</strong></span>
-		  			</div>
-		  			<div class="details-wrapper">
-		  				<label>Last Activity</label>
-		  				<span><strong>{{user.status}}</strong></span>
-		  			</div>	
+		  			<template is="dom-if" if="{{user.location}}">
+			  			<div class="details-wrapper">
+			  				<label>Location</label>
+			  				<span><strong>{{user.location}}</strong></span>
+			  			</div>
+		  			</template>
+		  			<template is="dom-if" if="{{user.extension}}">
+			  			<div class="details-wrapper">
+			  				<label>Extension</label>
+			  				<span><strong>{{user.extension}}</strong></span>
+			  			</div>
+		  			</template>
+		  			<template is="dom-if" if="{{user.status}}">
+			  			<div class="details-wrapper">
+			  				<label>Last Activity</label>
+			  				<span><strong>{{user.status}}</strong></span>
+			  			</div>	
+		  			</template>
 		  		</div>
 		  	</div>
 		  </template>	
