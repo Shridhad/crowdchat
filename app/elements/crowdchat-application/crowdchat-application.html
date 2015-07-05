@@ -14,7 +14,8 @@
 	<template>
 	  <iron-ajax auto 
 	  	url="/data.json" 
-	  	handle-as="json" 
+	  	handle-as="json"
+	  	on-response="handleAjaxResponse" 
 	  	last-response="{{lastResponse}}"></iron-ajax>
 	  <div class="crowdchat-wrapper">
 	  		<div class="pane-wrapper">
@@ -30,7 +31,7 @@
 	  					<paper-icon-button icon="icons:attachment"></paper-icon-button>
 	  				</div>
 	  				<crowdchat-overlay id="crowdchatOverlay">
-	  					<user-profile user="{{lastResponse.members.1}}"></user-profile>
+	  					<user-profile user="{{selectedUser}}"></user-profile>
 	  				</crowdchat-overlay>	
 	  			</div>
 	  			<div class="pane-list">
@@ -38,7 +39,7 @@
 	  					<chat-banner title="Team Members" closable></chat-banner>
 	  				</header>
 	  				<div class="pane-body pane-list-body">
-	  					<team-member members="{{lastResponse.members}}"></team-member>
+	  					<team-member members="{{lastResponse.members}}" selected="{{selected}}"></team-member>
 	  				</div>
 	  			</div>
 	  		</div>
