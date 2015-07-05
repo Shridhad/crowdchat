@@ -3,8 +3,12 @@ Polymer
   properties:
     title:
       type: String
-      value: "Crowdchat"
+      value: 'Crowdchat'
     closable:
     	type: Boolean
     	reflectToAttribute: true
     	value: false
+
+  showOverlay: (event)->
+  	overlay = document.getElementById('crowdchatOverlay')
+  	overlay.open() if overlay

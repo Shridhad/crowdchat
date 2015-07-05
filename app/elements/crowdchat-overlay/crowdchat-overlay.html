@@ -1,0 +1,22 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="/bower_components/iron-icons/iron-icons.html">
+
+<dom-module id="crowdchat-overlay">
+  <link rel="stylesheet" href="crowdchat-overlay.css">
+  <template>
+    <div class="crowdchat-overlay-wrapper">
+    	<header>
+    		<div class="back-wrapper">
+    			<paper-icon-button icon="icons:chevron-left" on-click="close"></paper-icon-button>
+    			<label on-click="close">Back</label>
+    		</div>
+    		<div class="close-wrapper" on-click="close">
+    			<paper-icon-button icon="icons:close"></paper-icon-button>
+    		</div>
+    	</header>
+      <content></content>
+    </div>
+  </template>
+  <script src="crowdchat-overlay.js"></script>
+</dom-module>

@@ -10,7 +10,7 @@
 	  		<h1>{{title}}</h1>
 	  		<template is="dom-if" if="{{!closable}}">
 		  		<div class="actions secondary">
-		  			<paper-icon-button icon="icons:account-box"></paper-icon-button>
+		  			<paper-icon-button icon="icons:account-box" on-click="showOverlay"></paper-icon-button>
 		  			<paper-icon-button icon="communication:call"></paper-icon-button>
 		  			<paper-icon-button icon="communication:email"></paper-icon-button>
 		  		</div>

@@ -2,10 +2,11 @@
 <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="/bower_components/iron-ajax/iron-ajax.html">
-<link rel="import" href="/elements/iron-input/iron-input.html">
+<link rel="import" href="/bower_components/iron-input/iron-input.html">
 <link rel="import" href="/elements/chat-banner/chat-banner.html">
 <link rel="import" href="/elements/chat-message/chat-message.html">
 <link rel="import" href="/elements/team-member/team-member.html">
+<link rel="import" href="/elements/crowdchat-overlay/crowdchat-overlay.html">
 
 <dom-module id="crowdchat-application">
 	<link rel="stylesheet" href="crowdchat-application.css">
@@ -27,6 +28,7 @@
 	  					<input is="iron-input" placeholder="Type a message...">		
 	  					<paper-icon-button icon="icons:attachment"></paper-icon-button>
 	  				</div>
+	  				<crowdchat-overlay id="crowdchatOverlay">Hello</crowdchat-overlay>	
 	  			</div>
 	  			<div class="pane-list">
 	  				<header>

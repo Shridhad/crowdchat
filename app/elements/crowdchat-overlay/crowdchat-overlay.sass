@@ -1,0 +1,30 @@
+@import "../../styles/variables"
+
+$overlay-bg-color: rgb(84, 151, 228)
+
+.crowdchat-overlay-wrapper
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  padding: 10px
+  display: none
+  background-color: $overlay-bg-color
+  color: darken($white, 15)
+  opacity: 0
+  transition: opacity 0.5s ease-out
+
+  header
+    position: relative
+
+  .close-wrapper
+    position: absolute
+    top: 0
+    right: 5px
+
+  paper-icon-button
+    padding: 0
+
+
+  
