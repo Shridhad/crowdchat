@@ -10,6 +10,7 @@ appConfig =
 project =
   app: 'app'
   api: 'api'
+  img: "images"
   test: 'test'
   dist: 'dist'
 
@@ -41,7 +42,7 @@ initConfig =
     options:
       hostname: appConfig.hostname
       port: appConfig.port
-      base: [ project.app, project.dist, project.api ]
+      base: [ project.app, project.dist, project.api, project.img ]
 
     server:
       middleware: ( connect ) ->
@@ -50,6 +51,7 @@ initConfig =
           helper.mountFolder( connect, project.dist )
           helper.mountFolder( connect, project.app )
           helper.mountFolder( connect, project.api )
+          helper.mountFolder( connect, project.img )
         ]
 
   watch:
@@ -64,6 +66,7 @@ initConfig =
         '<%= yeoman.app %>/**/*.html'
         '<%= yeoman.dist %>/**/*.{css,js}'
         '<%= yeoman.api %>/**/*.json'
+        '<%= yeoman.img %>/**/*.jpg'
       ]
 
 

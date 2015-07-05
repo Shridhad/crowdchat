@@ -17,8 +17,27 @@
 	"messages": [
 		{
 			"from": "Jacqueline Holmes",
+			"avatar": "jacquelineholmes.jpg",
 			"message": "To register a custom element, use the Polymer function, and pass in the prototype for the new element.",
 			"time": "14:10"
+		},
+		{
+			"from": "Thomas Morgan",
+			"avatar": "thomasmorgan.jpg",
+			"message": "The prototype must have an is property that specifies the HTML tag name for your custom element.",
+			"time": "14:11"
+		},
+		{
+			"from": "Hamish Labatt",
+			"avatar": "hamishlabatt.jpg",	
+			"message": "By specification, the custom element’s name must contain a dash (-)",
+			"time": "14:13"
+		},
+		{
+			"from": "Jacqueline Holmes",
+			"avatar": "jacquelineholmes.jpg",
+			"message": "The Polymer function registers the element with the browser and returns a constructor that can be used to create new instances of your element via code.",
+			"time": "14:17"
 		}
 	]
 }

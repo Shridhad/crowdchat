@@ -1,21 +1,29 @@
 <link rel="import" href="/bower_components/polymer/polymer.html">
 <link rel="import" href="/bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="/elements/chat-banner/chat-banner.html">
+<link rel="import" href="/elements/chat-message/chat-message.html">
 
 <dom-module id="crowdchat-application">
+	<link rel="stylesheet" href="crowdchat-application.css">
 	<template>
-	  <link rel="stylesheet" href="crowdchat-application.css">
 	  <iron-ajax auto 
 	  	url="/data.json" 
 	  	handle-as="json" 
 	  	last-response="{{lastResponse}}"></iron-ajax>
 	  <div class="crowdchat-wrapper">
 	  		<div class="pane-wrapper">
-	  			<div class="chat-pane">
-	  				<chat-banner title="{{lastResponse.title}}"></chat-banner>
+	  			<div class="pane-chat">
+	  				<header>
+	  					<chat-banner title="{{lastResponse.title}}"></chat-banner>
+	  				</header>
+	  				<div class="pane-body pane-chat-body">
+	  					<chat-message messages="{{lastResponse.messages}}"></chat-message>
+	  				</div>
+	  				<div class="pane-footer pane-chat-footer">
+	  				</div>
 	  			</div>
-	  			<div class="list-pane">
-	  				<chat-banner title="Team Members" closable></chat-banner>
+	  			<div class="pane-list">
+	  					<chat-banner title="Team Members" closable></chat-banner>
 	  			</div>
 	  		</div>
 	  </div>

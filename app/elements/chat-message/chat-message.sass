@@ -1,0 +1,31 @@
+@import "../../styles/variables"
+
+$msg-color: rgb(126, 125, 125)
+
+.chat-message-wrapper
+	padding: 15px
+	display: table
+	border-bottom: 1px solid $border-color
+
+	.user-avatar, .msg-details
+		display: table-cell
+		vertical-align: top
+
+	.user-avatar img
+		height: 30px
+		width: 30px
+		display: block
+		border-radius: 50%
+
+	.msg-details	
+		position: relative
+		padding-left: 10px
+
+		.msg
+			color: $msg-color
+			margin: 5px 0
+
+	time
+		position: absolute
+		top: 0
+		right: 0

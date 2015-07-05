@@ -1,0 +1,22 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+
+<dom-module id="chat-message">
+	<link rel="stylesheet" href="chat-message.css">
+	<template>
+	  <template is="dom-repeat" id="message" as="message" items="{{messages}}">
+		  <div class="chat-message-wrapper">
+		  	<div class="user-avatar">
+		  		<img src="{{message.avatar}}">
+		  	</div>
+		  	<div class="msg-details">
+			  	<label class="name">
+			  		<strong>{{message.from}}</strong>
+			  	</label>
+			  	<time>{{message.time}}</time>
+			  	<p class="msg">{{message.message}}</p>
+		  	</div>
+		  </div>
+	  </template>
+  </template>
+  <script src="chat-message.js"></script>
+</dom-module>
