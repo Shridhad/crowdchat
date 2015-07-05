@@ -16,9 +16,31 @@ $hover-border-color: rgb(46, 117, 168)
 	.user-avatar, .user-name
 		padding: 0 5px
 
-	.user-avatar img
-		height: 40px
-		width: 40px
-		display: block
-		border-radius: 50%
+	.user-avatar
+		position: relative
+		img
+			height: 40px
+			width: 40px
+			display: block
+			border-radius: 50%
+		&::after
+			content: ""
+			padding: 5px
+			position: absolute
+			border-radius: 50%
+			bottom: -2px
+			right: 6px
+
+		&[status]::after
+			border: 1px solid rgb(255, 255, 255)	
+		&[status=online]::after
+			background-color: rgb(36, 182, 36)
+		&[status=offline]::after
+			background-color: rgb(181, 179, 179)
+		&[status=busy]::after
+			background-color: rgb(165, 31, 31)
+		&[status=idle]::after
+			background-color: rgb(216, 216, 24)
+		    
+
 

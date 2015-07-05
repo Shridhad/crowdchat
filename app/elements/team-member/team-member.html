@@ -7,7 +7,7 @@
 		<iron-selector class="team-members">
 			<template is="dom-repeat" id="member" items="{{members}}">
 			  <div class="team-member-wrapper" on-click="selectionChanged" index="{{index}}">
-			  	<div class="user-avatar">
+			  	<div class="user-avatar" status$="{{item.status}}">
 			  		<img src="{{item.avatar}}">
 			  	</div>		
 			  	<div class="user-name">
