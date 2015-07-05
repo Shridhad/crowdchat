@@ -7,6 +7,7 @@
 <link rel="import" href="/elements/chat-message/chat-message.html">
 <link rel="import" href="/elements/team-member/team-member.html">
 <link rel="import" href="/elements/crowdchat-overlay/crowdchat-overlay.html">
+<link rel="import" href="/elements/user-profile/user-profile.html">
 
 <dom-module id="crowdchat-application">
 	<link rel="stylesheet" href="crowdchat-application.css">
@@ -28,7 +29,9 @@
 	  					<input is="iron-input" placeholder="Type a message...">		
 	  					<paper-icon-button icon="icons:attachment"></paper-icon-button>
 	  				</div>
-	  				<crowdchat-overlay id="crowdchatOverlay">Hello</crowdchat-overlay>	
+	  				<crowdchat-overlay id="crowdchatOverlay">
+	  					<user-profile user="{{lastResponse.members.1}}"></user-profile>
+	  				</crowdchat-overlay>	
 	  			</div>
 	  			<div class="pane-list">
 	  				<header>
