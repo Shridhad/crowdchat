@@ -4,11 +4,11 @@
 		{
 			"name": "Alan Jensen",
 			"avatar": "alanjensen.jpg",
-			"label": "Adiministrator UK Group",
-			"location": "UK-London",
-			"mobile": "+44 (0) 8643 542 324",
-			"extension": "14562",
-			"skills": ["Expert User(50K+)"]
+			"label": "Maanager",
+			"location": "UK London",
+			"mobile": "+44 (0) 5673 478 356",
+			"extension": "3252",
+			"skills": ["Leadership"]
 		}, 
 		{
 			"name": "Jacqueline Holmes",
@@ -26,49 +26,48 @@
 			"name": "Eugene Simpson",
 			"status": "offline",
 			"avatar": "eugenesimpson.jpg",
-			"label": "Adiministrator UK Group",
+			"label": "Delivery Maanager",
 			"email": "eugenesimpson@corps.company.com",
-			"location": "UK-London",
-			"mobile": "+44 (0) 7877 554 324",
+			"location": "Australia",
+			"mobile": "+44 (0) 4762 085 579",
 			"manager": "Alan Jensen",
-			"extension": "14536",
-			"skills": ["Expert User(50K+)"]
+			"extension": "35482",
+			"skills": ["Delivery Assurance"]
 		}, 
 		{
 			"name": "Thomas Morgan",
 			"status": "online",
 			"avatar": "thomasmorgan.jpg",
-			"label": "Adiministrator UK Group",
+			"label": "IT Department",
 			"email": "jacqueline.holmes@corps.company.com",
-			"location": "UK-London",
+			"location": "UK-Manchester",
 			"mobile": "+44 (0) 7877 554 324",
 			"manager": "Alan Jensen",
-			"extension": "14536",
-			"skills": ["Expert User(50K+)"]
+			"extension": "56889",
+			"skills": ["Test Driven Development"]
 		},
 		{
 			"name": "Hamish Labatt",
 			"status": "busy",
 			"avatar": "hamishlabatt.jpg",
-			"label": "Adiministrator UK Group",
+			"label": "IT Department",
 			"email": "jacqueline.holmes@corps.company.com",
 			"location": "UK-London",
-			"mobile": "+44 (0) 7877 554 324",
+			"mobile": "+44 (0) 3456 554 453",
 			"manager": "Alan Jensen",
-			"extension": "14536",
-			"skills": ["Expert User(50K+)"]
+			"extension": "43562",
+			"skills": ["Front End"]
 		},
 		{
 			"name": "Katy Perry",
 			"status": "idle",
 			"avatar": "katyperry.jpg",
-			"label": "Adiministrator UK Group",
+			"label": "Singer",
 			"email": "jacqueline.holmes@corps.company.com",
-			"location": "UK-London",
-			"mobile": "+44 (0) 7877 554 324",
-			"manager": "Alan Jensen",
-			"extension": "14536",
-			"skills": ["Expert User(50K+)"]
+			"location": "US",
+			"mobile": "+1 (0) 8934 854 985",
+			"extension": "4546",
+			"skills": ["Singing"]
 		}
 	],
 	"messages": [
