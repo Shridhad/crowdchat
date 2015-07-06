@@ -4,6 +4,7 @@ Polymer
 		user:
 			type: Object
 			value: null
+			observer: "disconnect"
 	ready: ->
 		@userProfile = this.$$('.user-profile-wrapper')
 
