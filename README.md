@@ -5,7 +5,7 @@ A entrepreneur team chat app
 
 ```
 npm install
-bower install`
+bower install
 ```
 
 ## Start Server
