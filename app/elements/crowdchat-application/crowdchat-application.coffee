@@ -8,6 +8,10 @@ Polymer
   	selectedUser: 
   		type: Object
   		value: null
+    overlaystatus:
+      type: String
+      value: "closed"
+      notify: true  
   handleAjaxResponse: (req)->
   	@data = req.target.lastResponse
   	@selectedUser = @data.members[0]

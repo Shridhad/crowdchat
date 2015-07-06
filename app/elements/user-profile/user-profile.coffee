@@ -5,6 +5,12 @@ Polymer
 			type: Object
 			value: null
 			observer: "disconnect"
+		overlaystatus:
+			type: String
+			value: "closed"
+			notify: true
+			observer: "_overlayStatusChanged"	
+			
 	ready: ->
 		@userProfile = this.$$('.user-profile-wrapper')
 
@@ -30,3 +36,5 @@ Polymer
 			@teamMember = document.querySelector('team-member')
 		@teamMember.hideCallInfo() if @teamMember		
 
+	_overlayStatusChanged: ->
+		@disconnect() if @overlaystatus == "closed"	

@@ -30,8 +30,8 @@
 	  					<input is="iron-input" placeholder="Type a message...">		
 	  					<paper-icon-button icon="icons:attachment"></paper-icon-button>
 	  				</div>
-	  				<crowdchat-overlay id="crowdchatOverlay">
-	  					<user-profile user="{{selectedUser}}"></user-profile>
+	  				<crowdchat-overlay id="crowdchatOverlay" overlaystatus="{{overlaystatus}}">
+	  					<user-profile user="{{selectedUser}}" overlaystatus="{{overlaystatus}}"></user-profile>
 	  				</crowdchat-overlay>	
 	  			</div>
 	  			<div class="pane-list">
