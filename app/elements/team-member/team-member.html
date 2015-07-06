@@ -1,10 +1,19 @@
 <link rel="import" href="/bower_components/polymer/polymer.html">
 <link rel="import" href="/bower_components/iron-selector/iron-selector.html">
+<link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="/bower_components/iron-icons/communication-icons.html">
 
 <dom-module id="team-member">
 	<link rel="stylesheet" href="team-member.css">
 	<template>
-		<iron-selector class="team-members">
+		<div class="call-info-wrapper">
+			<div class="call-info">
+				<paper-icon-button icon="communication:call-end" on-click="disconnect"></paper-icon-button>
+				<span class="user-name">{{currentMember.name}}</span>
+				<time>00:00</time>
+			</div>
+		</div>
+		<iron-selector class="team-members" selected="0">
 			<template is="dom-repeat" id="member" items="{{members}}">
 			  <div class="team-member-wrapper" on-click="selectionChanged" index="{{index}}">
 			  	<div class="user-avatar" status$="{{item.status}}">

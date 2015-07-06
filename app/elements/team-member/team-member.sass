@@ -2,11 +2,36 @@
 
 $hover-border-color: rgb(46, 117, 168)
 
-.team-member-wrapper
+.call-info-wrapper
+	max-height: 0
+	transition: all 0.5s ease-in
+	overflow: hidden
+	&.call-in-progress
+		max-height: 70px
+
+.call-info, .team-member-wrapper
 	display: flex
 	align-items: center
 	padding: 15px
 	border-bottom: 1px solid $border-color
+
+.call-info 
+	position: relative
+	background-color: $overlay-bg-color
+	color: darken($white, 10)
+	time
+		position: absolute
+		top: 23px
+		right: 25px
+
+	paper-icon-button
+		padding: 3px
+		margin-right: 5px
+		border: 1px solid $border-color
+		border-radius: 50%
+		background-color: $call-end-color	
+
+.team-member-wrapper
 	border-left: 3px solid transparent
 
 	&:hover, &.iron-selected
